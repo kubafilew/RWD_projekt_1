@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* @media (min-width: 320px) and (max-width: 768px) { */
+#wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  font-family: Roboto, sans-serif;
+  /* background-color: gray; */
+}
+/* ----------------------------------------HEADER--------------------------------------- */
+
+.nav {
+  background-color: #020204;
+  height: 50px;
+  display: flex;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 1%;
+}
+.nav-logo {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  width: 20%;
+  font-weight: bold;
+}
+/* .nav-links {
+    margin-right: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: normal;
+    width: 40%;
+  }
+  .nav-link a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .link-contact {
+    cursor: not-allowed;
+  } */
+/* ------------------------------------------INTRO--------------------------------------- */
+/* main {
+    background-color: #f1f1f1;
+    margin: 0 auto;
+  } */
+.introduction {
+  height: 576px;
+  background-image: url("https://images.unsplash.com/photo-1614730073452-26212f842765?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.introduction-header {
+  margin: 15% auto auto 5px;
+  display: flex;
+  flex-direction: column;
+}
+.intro-h1 {
+  width: 50%;
+  padding-top: auto;
+  padding-bottom: auto;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro-h2 {
+  /* width: 276px; */
+  /* height: 23.13px; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn {
+  /* margin-top: 30px; */
+  width: 114px;
+  height: 41px;
+  padding-top: auto;
+  padding-bottom: auto;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.15);
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  align-content: center;
+}
+
+/* .btn:hover {
+  background-color: #fff;
+} */
+/* .btn a:hover {
+  color: black;
+  font-weight: bold;
+  transition: 1s;
+} */
+
+/* -------------------------------------------SPECIALIST---------------------------------------- */
+
+.specialist {
+  height: auto;
+  background: #f1f1f1;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1%;
+  /* width: 100%;
+  margin: 0 auto; */
+}
+.specialist-header {
+  margin: 1% auto auto 5px;
+  display: flex;
+  flex-direction: column;
+}
+.specialist h1 {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: #152d41;
+}
+.worker {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.worker-circle {
+  margin: auto;
+  height: 33%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.worker-face {
+  background-image: url(https://randomuser.me/api/portraits/lego/2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+}
+.worker-data {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 550px; */
+  /* margin-right: auto; */
+}
+.worker-data h2 {
+  font-weight: bold;
+  font-size: 18px;
+  /* margin-bottom: 25px; */
+  display: flex;
+  flex-direction: row;
+}
+.worker:nth-of-type(even) {
+  display: flex;
+  flex-direction: column;
+  flex-direction: row-reverse;
+  margin-bottom: 25px;
+}
+
+.worker:nth-of-type(even) .worker-face {
+  background-image: url(https://randomuser.me/api/portraits/lego/3.jpg);
+  /* margin: 0 0 0 -10px; */
+}
+.worker:nth-of-type(even) h2 {
+  display: flex;
+  text-align: right;
+}
+
+.worker:nth-of-type(even) p {
+  text-align: right;
+}
+
+/* ----------------------------------------------------SERVICE------------------------------------------ */
+
+.service {
+  height: auto;
+  background: #405d78;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.serv-wrapper {
+  width: 80%;
+  padding-bottom: 3%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.serv-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 12vh;
+  font-family: Roboto;
+  font-style: normal;
+  padding-left: 80px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.serv-box {
+  display: flex;
+  height: 190px;
+  width: 190px;
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #f1f1f1;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.serv-box:hover {
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+}
+
+.serv {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  line-height: 21.09px;
+}
+.dot {
+  background: #e07a64;
+  position: absolute;
+  left: -11px;
+  top: -11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+/* --------------------------------------------FOOTER-------------------------------------------------- */
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 1%;
+}
+.footer div {
+  display: flex;
+  margin-left: 80px;
+  align-items: center;
+}
+.socios {
+  display: flex;
+  margin-right: 80px;
+  align-items: center;
+  align-content: center;
+}
+.insta {
+  color: #ffffff;
+  font-size: 31px;
+  padding: 3%;
+}
+.fbook {
+  color: #ffffff;
+  font-size: 31px;
+  padding: 3%;
+  margin-left: 8px;
+}
+
+/* ----------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+/* ##Device = Tablets, Ipads (landscape)
+##Screen = B/w 768px to 1024px */
+
+/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { */

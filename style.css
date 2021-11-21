@@ -8,7 +8,7 @@
   width: 100%;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
-  /* background-color: gray; */
+  /* background-color: #4e4e4e; */
 }
 /* ----------------------------------------HEADER--------------------------------------- */
 
@@ -48,12 +48,12 @@
     cursor: not-allowed;
   } */
 /* ------------------------------------------INTRO--------------------------------------- */
-/* main {
-    background-color: #f1f1f1;
-    margin: 0 auto;
-  } */
+main {
+  background-color: #4e4e4e1;
+  margin: 0 auto;
+}
 .introduction {
-  height: 576px;
+  height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1614730073452-26212f842765?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80");
   background-repeat: no-repeat;
   background-position: center;
@@ -156,6 +156,7 @@
 }
 .specialist h1 {
   /* width: 50%; */
+  margin: 7% auto 7% auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -241,8 +242,13 @@
   flex-direction: column;
   padding: 1%;
 }
+.service-header {
+  margin: 7% auto 7% auto;
+  display: flex;
+  flex-direction: column;
+}
 .serv-wrapper {
-  width: 80%;
+  width: 97vw;
   padding-bottom: 3%;
   margin: 0 auto;
   display: flex;
@@ -254,31 +260,32 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  height: 12vh;
+  text-align: center;
+  justify-content: center;
   font-family: Roboto;
   font-style: normal;
-  padding-left: 80px;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 42px;
   color: #ffffff;
-  margin-top: 15px;
 }
 .serv-box {
   display: flex;
+  /* flex-direction: row;
+  flex-wrap: wrap; */
   height: 190px;
   width: 190px;
-  margin: 2%;
+  margin: 3%;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: #f1f1f1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.serv-box:hover {
+/* .serv-box:hover {
   transform: scale(1.05);
   transition-duration: 0.5s;
-}
+} */
 
 .serv {
   font-family: Roboto;
@@ -310,39 +317,52 @@ span {
 }
 /* --------------------------------------------FOOTER-------------------------------------------------- */
 .footer {
+  height: 10vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
   line-height: 21px;
+  background-color: #4e4e4e;
   color: #ffffff;
   padding: 1%;
 }
-.footer div {
+.foot-wrapp {
+  /* margin: 7% auto auto auto; */
   display: flex;
-  margin-left: 80px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+}
+.footer div {
+  /* margin: auto 7% auto auto; */
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+}
 }
 .socios {
   display: flex;
-  margin-right: 80px;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
 }
 .insta {
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
   font-size: 31px;
-  padding: 3%;
+  margin: 15%;
 }
 .fbook {
+  display: flex;
+  flex-direction: row;
   color: #ffffff;
   font-size: 31px;
-  padding: 3%;
-  margin-left: 8px;
+  margin: 15%;
 }
 
 /* ----------------------------------------------MEDIA QUERIES----------------------------------------------------------- */

@@ -202,6 +202,8 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom: 25px;
+  margin-top: 25px;
   /* width: 550px; */
   /* margin-right: auto; */
 }

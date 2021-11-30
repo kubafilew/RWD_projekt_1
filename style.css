@@ -227,11 +227,11 @@ main {
 }
 .worker:nth-of-type(even) h2 {
   display: flex;
-  text-align: right;
+  text-align: left;
 }
 
 .worker:nth-of-type(even) p {
-  text-align: right;
+  text-align: left;
 }
 
 /* ----------------------------------------------------SERVICE------------------------------------------ */

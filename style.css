@@ -77,7 +77,6 @@ main {
   font-size: 36px;
   font-style: normal;
   font-weight: bold;
-  font-size: 30px;
   line-height: 42px;
   color: #ffffff;
   display: flex;
@@ -332,23 +331,22 @@ span {
 }
 .foot-wrapp {
   /* margin: 7% auto auto auto; */
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 .footer div {
-  /* margin: auto 7% auto auto; */
   display: flex;
-  flex-direction: row;
-  /* flex-wrap: wrap; */
+  text-align: center;
+  justify-content: space-around;
 }
-}
+
 .socios {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 .insta {
   display: flex;

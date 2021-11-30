@@ -412,4 +412,7 @@ span {
     font-family: "Roboto", sans-serif;
     background-color: gray;
   }
+  .worker-circle {
+    width: 15%;
+  }
 }

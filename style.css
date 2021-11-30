@@ -347,6 +347,7 @@ span {
 .socios {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 .insta {
   display: flex;
@@ -374,3 +375,39 @@ span {
 ##Screen = B/w 768px to 1024px */
 
 /* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { */
+/* ----------------------------------------------------------------------------------------------- */
+
+/* @media screen and (min-width: 768px) {
+  .worker-circle {
+    width: 10%;
+  } */
+
+@media screen and (min-width: 457px) {
+  .foot-wrapp {
+    width: 97vw;
+    align-content: center;
+  }
+  p,
+  .worker:nth-of-type(even) p {
+    text-align: left;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 960px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+
+  #wrapper {
+    box-sizing: border-box;
+    margin: auto auto;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    background-color: gray;
+  }
+}

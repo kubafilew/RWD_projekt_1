@@ -33,8 +33,17 @@ body {
   width: 20%;
   font-weight: bold;
 }
-.nav-links {
+.nav-link {
   display: none;
+}
+img {
+  width: 25px;
+  height: 20px;
+}
+.burger {
+  margin: 10px 7vw 10px 10px;
+  display: block;
+  cursor: progress;
 }
 /* ------------------------------------------INTRO--------------------------------------- */
 main {
@@ -75,8 +84,6 @@ main {
   flex-wrap: wrap;
 }
 .intro-h2 {
-  /* width: 276px; */
-  /* height: 23.13px; */
   flex-direction: row;
   flex-wrap: wrap;
   width: 50%;
@@ -94,7 +101,6 @@ main {
 }
 
 .btn {
-  /* margin-top: 30px; */
   width: 114px;
   height: 41px;
   padding-top: auto;
@@ -126,8 +132,6 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1%;
-  /* width: 100%;
-  margin: 0 auto; */
 }
 .specialist-header {
   margin: 1% auto auto 5px;
@@ -135,7 +139,6 @@ main {
   flex-direction: column;
 }
 .specialist h1 {
-  /* width: 50%; */
   margin: 7% auto 7% auto;
   display: flex;
   flex-direction: row;
@@ -193,7 +196,6 @@ main {
   margin-bottom: 25px;
   font-weight: bold;
   font-size: 18px;
-  /* margin-bottom: 25px; */
   display: flex;
   flex-direction: row;
 }
@@ -212,21 +214,15 @@ main {
   flex-direction: row-reverse;
   flex-wrap: wrap;
   margin-bottom: 25px;
-
   width: auto;
   text-align: justify;
 }
 .worker:nth-of-type(even) .worker-face {
   background-image: url(https://randomuser.me/api/portraits/lego/3.jpg);
-  /* margin: 0 0 0 -10px; */
 }
 .worker:nth-of-type(even) h2 {
   display: flex;
   text-align: left;
-}
-
-.worker:nth-of-type(even) p {
-  /* text-align: left; */
 }
 
 /* ----------------------------------------------------SERVICE------------------------------------------ */
@@ -267,8 +263,6 @@ main {
 }
 .serv-box {
   display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
   height: 190px;
   width: 190px;
   margin: 3%;
@@ -413,6 +407,9 @@ span {
     margin-left: 3%;
     margin-right: 4%;
   }
+  .nav-link {
+    display: block;
+  }
   .worker-circle {
     height: 33%;
     width: 20%;
@@ -420,17 +417,20 @@ span {
     flex-direction: row;
     margin-left: 3%;
   }
-  .worker:nth-of-type(even) {
+  .worker:nth-of-type(even) .worker-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
     display: flex;
-    flex-direction: column;
     flex-direction: row-reverse;
-  }
-  .worker:nth-of-type(even) h2 {
-    display: flex;
-    text-align: right;
+    width: 70%;
+    margin-left: 3%;
+    margin-right: 4%;
   }
   .worker:nth-of-type(even) p {
     text-align: right;
+    justify-content: left;
   }
   .worker:nth-of-type(even) .worker-circle {
     height: 33%;
@@ -440,16 +440,11 @@ span {
     margin-left: 0%;
     margin-right: 3%;
   }
+  .burger {
+    display: none;
+  }
 }
 @media screen and (min-width: 960px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-
   #wrapper {
     box-sizing: border-box;
     margin: auto auto;
@@ -460,5 +455,11 @@ span {
   .worker-circle {
     height: 33%;
     width: 20%;
+  }
+  .introduction-header {
+    margin: 20% 10% 5% 15%;
+  }
+  .burger {
+    display: none;
   }
 }

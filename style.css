@@ -2,20 +2,23 @@
   margin: 0;
   padding: 0;
 }
-/* @media (min-width: 320px) and (max-width: 768px) { */
+body {
+  overflow-x: hidden;
+}
 #wrapper {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
-  /* background-color: #4e4e4e; */
 }
 /* ----------------------------------------HEADER--------------------------------------- */
 
 .nav {
   background-color: #020204;
   height: 50px;
+  width: 100vw;
   display: flex;
+  justify-content: space-between;
   font-family: Roboto;
   font-style: normal;
   font-size: 18px;
@@ -30,30 +33,17 @@
   width: 20%;
   font-weight: bold;
 }
-/* .nav-links {
-    margin-right: 33px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-weight: normal;
-    width: 40%;
-  }
-  .nav-link a {
-    color: #ffffff;
-    text-decoration: none;
-  }
-
-  .link-contact {
-    cursor: not-allowed;
-  } */
+.nav-links {
+  display: none;
+}
 /* ------------------------------------------INTRO--------------------------------------- */
 main {
-  background-color: #4e4e4e1;
+  background-color: black;
   margin: 0 auto;
 }
 .introduction {
   height: 100vh;
+
   background-image: url("https://images.unsplash.com/photo-1614730073452-26212f842765?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80");
   background-repeat: no-repeat;
   background-position: center;
@@ -126,15 +116,6 @@ main {
   align-content: center;
 }
 
-/* .btn:hover {
-  background-color: #fff;
-} */
-/* .btn a:hover {
-  color: black;
-  font-weight: bold;
-  transition: 1s;
-} */
-
 /* -------------------------------------------SPECIALIST---------------------------------------- */
 
 .specialist {
@@ -204,10 +185,12 @@ main {
   flex-wrap: wrap;
   margin-bottom: 25px;
   margin-top: 25px;
-  /* width: 550px; */
-  /* margin-right: auto; */
+  width: auto;
+  text-align: justify;
 }
 .worker-data h2 {
+  margin-top: 25px;
+  margin-bottom: 25px;
   font-weight: bold;
   font-size: 18px;
   /* margin-bottom: 25px; */
@@ -220,7 +203,19 @@ main {
   flex-direction: row-reverse;
   margin-bottom: 25px;
 }
+.worker-lorem {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 
+  width: auto;
+  text-align: justify;
+}
 .worker:nth-of-type(even) .worker-face {
   background-image: url(https://randomuser.me/api/portraits/lego/3.jpg);
   /* margin: 0 0 0 -10px; */
@@ -231,7 +226,7 @@ main {
 }
 
 .worker:nth-of-type(even) p {
-  text-align: left;
+  /* text-align: left; */
 }
 
 /* ----------------------------------------------------SERVICE------------------------------------------ */
@@ -283,10 +278,6 @@ main {
   background-color: #f1f1f1;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-/* .serv-box:hover {
-  transform: scale(1.05);
-  transition-duration: 0.5s;
-} */
 
 .serv {
   font-family: Roboto;
@@ -318,11 +309,11 @@ span {
 }
 /* --------------------------------------------FOOTER-------------------------------------------------- */
 .footer {
-  height: 10vh;
+  height: 147px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: space-between;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
@@ -332,22 +323,25 @@ span {
   padding: 1%;
 }
 .foot-wrapp {
-  /* margin: 7% auto auto auto; */
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  width: 97vw;
 }
 .footer div {
   display: flex;
   text-align: center;
+  flex-direction: row;
+
   justify-content: space-around;
 }
 
 .socios {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   text-align: center;
 }
@@ -366,23 +360,7 @@ span {
   margin: 15%;
 }
 
-/* ----------------------------------------------MEDIA QUERIES----------------------------------------------------------- */
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-/* ##Device = Tablets, Ipads (landscape)
-##Screen = B/w 768px to 1024px */
-
-/* @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { */
-/* ----------------------------------------------------------------------------------------------- */
-
-/* @media screen and (min-width: 768px) {
-  .worker-circle {
-    width: 10%;
-  } */
+/* -----------------------------------------media----------------------------------------- */
 
 @media screen and (min-width: 457px) {
   .foot-wrapp {
@@ -394,6 +372,73 @@ span {
     text-align: left;
     margin-bottom: 25px;
     margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .nav-links {
+    margin-right: 33px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: normal;
+    width: 40%;
+  }
+  .nav-link a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .link-contact {
+    cursor: not-allowed;
+  }
+
+  .btn:hover {
+    background-color: #fff;
+  }
+  .btn a:hover {
+    color: black;
+    font-weight: bold;
+    transition: 1s;
+  }
+  .worker-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 3%;
+    margin-right: 4%;
+  }
+  .worker-circle {
+    height: 33%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+  }
+  .worker:nth-of-type(even) {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row-reverse;
+  }
+  .worker:nth-of-type(even) h2 {
+    display: flex;
+    text-align: right;
+  }
+  .worker:nth-of-type(even) p {
+    text-align: right;
+  }
+  .worker:nth-of-type(even) .worker-circle {
+    height: 33%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 0%;
+    margin-right: 3%;
   }
 }
 @media screen and (min-width: 960px) {
@@ -413,6 +458,7 @@ span {
     background-color: gray;
   }
   .worker-circle {
-    width: 15%;
+    height: 33%;
+    width: 20%;
   }
 }
